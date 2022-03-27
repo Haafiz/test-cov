@@ -19,4 +19,5 @@ jobs:
           TEST_NAME: Tests
         with:
           bootstrap: vendor/autoload.php
+          php_extensions: xdebug
           args: tests --coverage-clover ./coverage.xml
