@@ -14,10 +14,9 @@ jobs:
       - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@v2
+        uses: php-actions/phpunit@v3
         env:
           TEST_NAME: Tests
         with:
           bootstrap: vendor/autoload.php
-          configuration: test/phpunit.xml
-          args: --coverage-text
+          args: tests --coverage-clover ./coverage.xml
