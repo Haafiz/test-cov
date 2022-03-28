@@ -19,6 +19,6 @@ jobs:
           TEST_NAME: Tests
         with:
           bootstrap: vendor/autoload.php
-          coniguration: phpunit.xml
+          configuration: phpunit.xml
           php_extensions: xdebug
           args: tests --coverage-clover ./coverage.xml
