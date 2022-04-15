@@ -24,7 +24,7 @@ jobs:
           php_extensions: xdebug
           args: tests --coverage-clover ./coverage.xml
         
-      - name: Upload to Code Cov
+      - name: Upload to CodeCov
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODE_COV_TOKEN }}
